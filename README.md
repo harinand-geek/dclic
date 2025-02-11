@@ -24,11 +24,7 @@ Ce dépôt contient les ressources pour la formation DCLIC en développement mob
 ```
 .
 ├── README.md
-├── test/
-│   ├── test-flutter-dart.html    # Interface du test
-│   └── questions.md              # Questions du test
-└── docs/
-    └── style.css                 # Styles du test
+│── test-flutter-dart.html    # Interface du test
 ```
 
 ## Tests d'Entrée
