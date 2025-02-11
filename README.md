@@ -1,81 +1,122 @@
-# dclic
-Formation Dclic
-Test d'Entrée Formation DCLIC Développement Mobile 📱
-Description
-Ce dépôt contient le test d'évaluation des connaissances intermédiaires pour la formation DCLIC en développement mobile. Le test couvre les fondamentaux de Flutter et Dart, deux technologies essentielles pour le développement d'applications mobiles multiplateformes.
-📋 Contenu du Test
-Le test comprend 20 questions couvrant plusieurs aspects :
+# Formation DCLIC Développement Mobile 📱
 
-Programmation Dart
-Framework Flutter
-Gestion de base de données SQLite
-Widgets et interface utilisateur
-Gestion d'état et architecture
+## Table des matières
+- [Présentation](#présentation)
+- [Structure du Projet](#structure-du-projet)
+- [Tests d'Entrée](#tests-dentrée)
+- [Installation](#installation)
+- [Utilisation](#utilisation)
+- [Contribution](#contribution)
+- [Contact](#contact)
 
-🎯 Objectifs du Test
+## Présentation
 
-Évaluer les connaissances de base en Dart et Flutter
-Vérifier la compréhension des concepts fondamentaux du développement mobile
-Assurer un niveau minimum pour suivre la formation intermédiaire
+Ce dépôt contient les ressources pour la formation DCLIC en développement mobile, incluant le test d'évaluation des connaissances intermédiaires. La formation se concentre sur Flutter et Dart pour le développement d'applications mobiles multiplateformes.
 
-📚 Structure du Projet
-Copy.
+### Objectifs de la Formation
+- Maîtriser le développement mobile avec Flutter
+- Comprendre la programmation Dart
+- Apprendre la gestion de données avec SQLite
+- Développer des interfaces utilisateur modernes
+
+## Structure du Projet
+
+```
+.
 ├── README.md
-└── test-flutter-dart.html       # Test complet avec questions et réponses
-🔧 Technologies Couvertes
+├── test/
+│   ├── test-flutter-dart.html    # Interface du test
+│   └── questions.md              # Questions du test
+└── docs/
+    └── style.css                 # Styles du test
+```
 
-Dart : Syntaxe, types, fonctions, classes
-Flutter : Widgets, layout, gestion d'état
-SQLite : Bases de données mobiles
-UI/UX : Conception d'interfaces utilisateur
+## Tests d'Entrée
 
-📝 Format du Test
+### Contenu Évalué
+- **Programmation Dart** : Syntaxe, types, fonctions, classes
+- **Framework Flutter** : Widgets, layout, gestion d'état
+- **Base de données** : SQLite, gestion des données
+- **UI/UX** : Conception d'interfaces utilisateur
 
-20 questions à choix multiples
-Exemples de code pratiques
-Explications détaillées pour chaque réponse
+### Format du Test
+- 20 questions à choix multiples
+- Exemples de code pratiques
+- Explications détaillées pour chaque réponse
 
-🎓 Niveau Requis
-Ce test est conçu pour des développeurs ayant :
+### Prérequis
+- Connaissances de base en programmation
+- Familiarité avec le développement mobile
+- Compréhension basique de Dart/Flutter
 
-Des connaissances de base en programmation
-Une exposition préalable à Dart/Flutter
-Une compréhension des concepts de développement mobile
+## Installation
 
-🌟 Points Clés Évalués
+1. Cloner le dépôt :
+```bash
+git clone https://github.com/votre-username/dclic-mobile-formation.git
+```
 
-Compréhension de la syntaxe Dart
-Manipulation des widgets Flutter
-Gestion des données avec SQLite
-Principes de mise en page mobile
-Concepts de programmation orientée objet
+2. Ouvrir dans un navigateur :
+```bash
+cd dclic-mobile-formation
+open test/test-flutter-dart.html
+```
 
-💻 Comment Utiliser
+## Utilisation
 
-Cloner le dépôt
-Ouvrir test-flutter-dart.html dans un navigateur
-Parcourir les questions et réponses
+1. Lancer le test depuis votre navigateur
+2. Répondre aux questions une par une
+3. Consulter les explications après chaque réponse
+4. Revoir les concepts mal compris avec les ressources fournies
 
-🤝 Contribution
-Les contributions pour améliorer le test sont les bienvenues. Vous pouvez :
-Corriger les erreur
-Signaler des erreurs
-Proposer des améliorations
-Ajouter des questions supplémentaires
+## Questions du Test
 
-📜 Licence
-Ce projet est sous licence DCLIC.
+Le test couvre les aspects suivants :
 
-Harinjaka ANDRIANANJA - Créateur initial
-CEtudiants DCLIC
+1. **Dart Fondamental**
+   - Types et variables
+   - Fonctions et classes
+   - Opérateurs et conditions
 
-📞 Contact
-Pour toute question concernant ce test, contactez :
+2. **Flutter Basics**
+   - Widgets de base
+   - Gestion de layout
+   - Navigation et routing
 
-Email :contact@harinjaka.mg
-Site DCLIC : www.harinjaka.mg
+3. **Base de données**
+   - SQLite avec Flutter
+   - Gestion des transactions
+   - CRUD opérations
 
-📅 Mise à Jour
+4. **UI/UX**
+   - Design responsive
+   - Gestion des états
+   - Animations
+
+## Contribution
+
+Les contributions sont bienvenues ! Pour contribuer :
+
+1. Fork le projet
+2. Créer une branche (`git checkout -b feature/AjoutQuestion`)
+3. Commit les changements (`git commit -m 'Ajout nouvelle question'`)
+4. Push vers la branche (`git push origin feature/AjoutQuestion`)
+5. Ouvrir une Pull Request
+
+## Contact
+
+- **Créateur** : Harinjaka ANDRIANANJA
+- **Email** : contact@harinjaka.mg
+- **Site** : www.harinjaka.mg
+
+## Licence
+
+Ce projet est sous licence DCLIC. Voir le fichier `LICENSE` pour plus de détails.
+
+## Mise à Jour
+
 Dernière mise à jour : Février 2025
 
-Ce test fait partie du programme de formation DCLIC en développement mobile. Tous droits réservés.
+---
+
+*Ce projet fait partie du programme de formation DCLIC en développement mobile. Tous droits réservés.*
