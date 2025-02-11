@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Complet Flutter/Dart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        .header {
+            text-align: center;
+            background-color: #2196F3;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .question-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+            transition: transform 0.2s;
+        }
+
+        .question-card:hover {
+            transform: translateY(-2px);
+        }
+
+        .question-number {
+            font-size: 1.2em;
+            color: #2196F3;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .question-title {
+            font-weight: bold;
+            margin-bottom: 15px;
+            padding: 10px;
+            background-color: #E3F2FD;
+            border-radius: 4px;
+        }
+
+        .correct-answer {
+            background-color: #E8F5E9;
+            padding: 10px;
+            border-left: 4px solid #4CAF50;
+            margin: 10px 0;
+        }
+
+        .explanation {
+            background-color: #F5F5F5;
+            padding: 15px;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+
+        .icon {
+            margin-right: 10px;
+            color: #2196F3;
+        }
+
+        .code-block {
+            background-color: #F5F5F5;
+            padding: 15px;
+            border-radius: 4px;
+            font-family: monospace;
+            overflow-x: auto;
+            border: 1px solid #E0E0E0;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1><i class="fab fa-flutter icon"></i>Test Flutter et Dart</h1>
+        <p>Questions, Réponses et Explications Détaillées</p>
+    </div>
+
+    <!-- Question 1 -->
+    <div class="question-card">
+        <div class="question-number">
+            <i class="fas fa-question-circle icon"></i>Question 1
+        </div>
+        <div class="question-title">Quel langage est couramment utilisé pour interagir avec SQLite dans les applications Flutter ?</div>
+        <div class="correct-answer">
+            <i class="fas fa-check icon"></i>Réponse correcte : Dart
+        </div>
+        <div class="explanation">
+            <i class="fas fa-info-circle icon"></i>Dart est le langage natif de Flutter et est utilisé avec le package sqflite pour interagir avec SQLite.
+        </div>
+    </div>
+
+    <!-- Question 2 -->
+    <div class="question-card">
+        <div class="question-number">
+            <i class="fas fa-question-circle icon"></i>Question 2
+        </div>
+        <div class="question-title">Comment définir une fonction "add" avec deux paramètres en Dart ?</div>
+        <div class="correct-answer">
+            <i class="fas fa-check icon"></i>Réponse correcte :
+            <div class="code-block">int add(int a, int b) => a + b;</div>
+        </div>
+        <div class="explanation">
+            <i class="fas fa-info-circle icon"></i>Cette syntaxe utilise la fonction fléchée et le typage fort de Dart pour une définition concise.
+        </div>
+    </div>
+
+    <!-- Question 3 -->
+    <div class="question-card">
+        <div class="question-number">
+            <i class="fas fa-question-circle icon"></i>Question 3
+        </div>
+        <div class="question-title">Qu'est-ce que SQLite ?</div>
+        <div class="correct-answer">
+            <i class="fas fa-check icon"></i>Réponse correcte : Un système de gestion de base de données relationnelles
+        </div>
+        <div class="explanation">
+            <i class="fas fa-info-circle icon"></i>SQLite est une base de données légère, serverless et auto-contenue, parfaite pour les applications mobiles.
+        </div>
+    </div>
+
+    <!-- Question 4 -->
+    <div class="question-card">
+        <div class="question-number">
+            <i class="fas fa-question-circle icon"></i>Question 4
+        </div>
+        <div class="question-title">Quel widget est utilisé pour organiser des widgets horizontalement ?</div>
+        <div class="correct-answer">
+            <i class="fas fa-check icon"></i>Réponse correcte : Row
+        </div>
+        <div class="explanation">
+            <i class="fas fa-info-circle icon"></i>Le widget Row permet d'organiser ses widgets enfants horizontalement en ligne.
+        </div>
+    </div>
+
+    <!-- Question 5 -->
+    <div class="question-card">
+        <div class="question-number">
+            <i class="fas fa-question-circle icon"></i>Question 5
+        </div>
+        <div class="question-title">Comment afficher une image depuis une URL en Flutter ?</div>
+        <div class="correct-answer">
+            <i class="fas fa-check icon"></i>Réponse correcte : Image.network
+        </div>
+        <div class="explanation">
+            <i class="fas fa-info-circle icon"></i>Image.network est le widget dédié pour charger et afficher des images depuis Internet.
+        </div>
+    </div>
+
+    <!-- Question 6 -->
+    <div class="question-card">
+        <div class="question-number">
+            <i class="fas fa-question-circle icon"></i>Question 6
+        </div>
+        <div class="question-title">Quelle est la taille maximale d'une base de données SQLite ?</div>
+        <div class="correct-answer">
+            <i class="fas fa-check icon"></i>Réponse correcte : Il n'y a pas de limite théorique, mais la taille dépend du système de fichiers
+        </div>
+        <div class="explanation">
+            <i class="fas fa-info-circle icon"></i>La limite théorique est de 281 téraoctets, mais les contraintes pratiques dépendent du système de fichiers et du stockage disponible.
+        </div>
+    </div>
+
+    <!-- Question 7 -->
+    <div class="question-card">
+        <div class="question-number">
+            <i class="fas fa-question-circle icon"></i>Question 7
+        </div>
+        <div class="question-title">Code Flutter pour le style d'un bouton</div>
+        <div class="correct-answer">
+            <i class="fas fa-check icon"></i>Réponse correcte :
+            <div class="code-block">
+final ButtonStyle stylebuton = ElevatedButton.styleFrom(
+    backgroundColor: Colors.green,
+    padding: const EdgeInsets.all(10),
+    textStyle: const TextStyle(fontSize: 25),
+    shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(20)),
+    elevation: 75.2
+);
+            </div>
+        </div>
+        <div class="explanation">
+            <i class="fas fa-info-circle icon"></i>Configuration complète du style d'un bouton avec couleur, padding, style de texte et forme.
+        </div>
+    </div>
+
+    <!-- Question 8 -->
+    <div class="question-card">
+        <div class="question-number">
+            <i class="fas fa-question-circle icon"></i>Question 8
+        </div>
+        <div class="question-title">Que représente une transaction dans SQLite ?</div>
+        <div class="correct-answer">
+            <i class="fas fa-check icon"></i>Réponse correcte : Un ensemble d'opérations SQL groupées, toutes ou aucune étant exécutée
+        </div>
+        <div class="explanation">
+            <i class="fas fa-info-circle icon"></i>Les transactions garantissent l'atomicité des opérations, assurant l'intégrité des données.
+        </div>
+    </div>
+
+    <!-- Question 9 -->
+    <div class="question-card">
+        <div class="question-number">
+            <i class="fas fa-question-circle icon"></i>Question 9
+        </div>
+        <div class="question-title">Résultat du code avec opérateur ternaire</div>
+        <div class="correct-answer">
+            <i class="fas fa-check icon"></i>Réponse correcte : 10
+        </div>
+        <div class="explanation">
+            <i class="fas fa-info-circle icon"></i>L'expression (5 > 10) étant fausse, la valeur après le : (10) est retournée.
+        </div>
+    </div>
+
+    <!-- Question 10 -->
+    <div class="question-card">
+        <div class="question-number">
+            <i class="fas fa-question-circle icon"></i>Question 10
+        </div>
+        <div class="question-title">Widget pour ajouter des marges intérieures</div>
+        <div class="correct-answer">
+            <i class="fas fa-check icon"></i>Réponse correcte : Padding
+        </div>
+        <div class="explanation">
+            <i class="fas fa-info-circle icon"></i>Le widget Padding est spécifiquement conçu pour ajouter des marges intérieures aux widgets.
+        </div>
+    </div>
+
+    <!-- Question 11 -->
+    <div class="question-card">
+        <div class="question-number">
+            <i class="fas fa-question-circle icon"></i>Question 11
+        </div>
+        <div class="question-title">Étape essentielle lors de l'installation de Flutter</div>
+        <div class="correct-answer">
+            <i class="fas fa-check icon"></i>Réponse correcte : Configuration du chemin d'accès
+        </div>
+        <div class="explanation">
+            <i class="fas fa-info-circle icon"></i>La configuration du PATH est essentielle pour accéder aux commandes Flutter depuis n'importe quel répertoire.
+        </div>
+    </div>
+
+    <!-- Question 12 -->
+    <div class="question-card">
+        <div class="question-number">
+            <i class="fas fa-question-circle icon"></i>Question 12
+        </div>
+        <div class="question-title">Différence entre StatelessWidget et StatefulWidget</div>
+        <div class="correct-answer">
+            <i class="fas fa-check icon"></i>Réponse correcte : StatelessWidget ne peut pas être mis à jour après sa création
+        </div>
+        <div class="explanation">
+            <i class="fas fa-info-circle icon"></i>Les StatelessWidget sont immuables, alors que les StatefulWidget peuvent être mis à jour dynamiquement.
+        </div>
+    </div>
+
+    <!-- Question 13 -->
+    <div class="question-card">
+        <div class="question-number">
+            <i class="fas fa-question-circle icon"></i>Question 13
+        </div>
+        <div class="question-title">Utilisation de l'opérateur is! en Dart</div>
+        <div class="correct-answer">
+            <i class="fas fa-check icon"></i>Réponse correcte : Vérifier si un objet n'est pas du même type que le type spécifié
+        </div>
+        <div class="explanation">
+            <i class="fas fa-info-circle icon"></i>L'opérateur is! est utilisé pour la négation de la vérification de type.
+        </div>
+    </div>
+
+    <!-- Question 14 -->
+    <div class="question-card">
+        <div class="question-number">
+            <i class="fas fa-question-circle icon"></i>Question 14
+        </div>
+        <div class="question-title">Widget de base pour afficher du texte</div>
+        <div class="correct-answer">
+            <i class="fas fa-check icon"></i>Réponse correcte : Text
+        </div>
+        <div class="explanation">
+            <i class="fas fa-info-circle icon"></i>Le widget Text est le widget fondamental pour l'affichage de texte dans Flutter.
+        </div>
+    </div>
+
+    <!-- Question 15 -->
+    <div class="question-card">
+        <div class="question-number">
+            <i class="fas fa-question-circle icon"></i>Question 15
+        </div>
+        <div class="question-title">Fonctionnalité pour le développement rapide en Flutter</div>
+        <div class="correct-answer">
+            <i class="fas fa-check icon"></i>Réponse correcte : Hot Reload
+        </div>
+        <div class="explanation">
+            <i class="fas fa-info-circle icon"></i>Hot Reload permet de voir les changements de code instantanément sans redémarrer l'application.
+        </div>
+    </div>
+
+    <!-- Question 16 -->
+    <div class="question-card">
+        <div class="question-number">
+            <i class="fas fa-question-circle icon"></i>Question 16
+        </div>
+        <div class="question-title">Définition d'une classe Personne en Dart</div>
+        <div class="correct-answer">
+            <i class="fas fa-check icon"></i>Réponse correcte :
+            <div class="code-block">
+class Personne {
+    String nom;
+    int age;
+    Personne(this.nom, this.age);
+}
+            </div>
+        </div>
+        <div class="explanation">
+            <i class="fas fa-info-circle icon"></i>Utilisation de la syntaxe concise de Dart pour les constructeurs avec initialisation directe des propriétés.
+        </div>
+    </div>
+
+    <!-- Question 17 -->
+    <div class="question-card">
+        <div class="question-number">
+            <i class="fas fa-question-circle icon"></i>Question 17
+        </div>
+        <div class="question-title">Comment spécifier la taille de la police pour un widget Text ?</div>
+        <div class="correct-answer">
+            <i class="fas fa-check icon"></i>Réponse correcte : En utilisant style avec TextStyle
+            <div class="code-block">
+Text(
+    'Hello World',
+    style: TextStyle(fontSize: 20.0),
+)
+            </div>
+        </div>
+        <div class="explanation">
+            <i class="fas fa-info-circle icon"></i>TextStyle permet de définir les propriétés de style du texte, incluant la taille de la police.
+        </div>
+    </div>
+
+    <!-- Question 18 -->
+    <div class="question-card">
+        <div class="question-number">
+            <i class="fas fa-question-circle icon"></i>Question 18
+        </div>
+        <div class="question-title">Comment aligner un widget au centre de son parent ?</div>
+        <div class="correct-answer">
+            <i class="fas fa-check icon"></i>Réponse correcte : En utilisant le widget Center
+            <div class="code-block">
+Center(
+    child: Text('Texte centré'),
+)
+            </div>
+        </div>
+        <div class="explanation">
+            <i class="fas fa-info-circle icon"></i>Le widget Center est la solution la plus simple et directe pour centrer un widget dans Flutter.
+        </div>
+    </div>
+
+    <!-- Question 19 -->
+    <div class="question-card">
+        <div class="question-number">
+            <i class="fas fa-question-circle icon"></i>Question 19
+        </div>
+        <div class="question-title">Principal avantage de Dart pour le développement d'applications</div>
+        <div class="correct-answer">
+            <i class="fas fa-check icon"></i>Réponse correcte : Unification du développement
+        </div>
+        <div class="explanation">
+            <i class="fas fa-info-circle icon"></i>Dart permet un développement unifié sur différentes plateformes avec un seul code base, simplifiant le développement multiplateforme.
+        </div>
+    </div>
+
+    <!-- Question 20 -->
+    <div class="question-card">
+        <div class="question-number">
+            <i class="fas fa-question-circle icon"></i>Question 20
+        </div>
+        <div class="question-title">Comment gérer l'état d'une application Flutter ?</div>
+        <div class="correct-answer">
+            <i class="fas fa-check icon"></i>Réponse correcte : En utilisant setState() dans les StatefulWidget ou en utilisant des gestionnaires d'état comme Provider ou Bloc
+        </div>
+        <div class="explanation">
+            <i class="fas fa-info-circle icon"></i>Flutter offre plusieurs approches pour la gestion d'état, depuis la solution intégrée setState() jusqu'aux solutions plus avancées comme Provider ou Bloc pour les applications complexes.
+        </div>
+    </div>
+
+    <div class="footer">
+        <p><i class="fab fa-flutter icon"></i>Fin du test Flutter/Dart</p>
+        <p>© 2025 - Test de connaissances Flutter et Dart</p>
+    </div>
+</body>
+</html>
